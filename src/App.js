@@ -1,13 +1,13 @@
+import logo from './public/vercel.svg';
+import './App.css';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
 import { useState } from 'react';
 
-
 function App() {
-	const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(false);
   return (
-      <div></div>
-      {/*<div className={ darkMode ? 'dark' : ''}>
+      <div className={ darkMode ? 'dark' : ''}>
       <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
          <nav className=' py-10 mb-12 flex justify-between'>
@@ -113,7 +113,7 @@ function App() {
           </div> */}
         </section>
       </main>
-    </div> */}
+    </div>
   );
 }
 
