@@ -1,7 +1,16 @@
 import logo from './public/vercel.svg';
 import './App.css';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import {BsFacebook, BsLinkedin, BsGithub} from 'react-icons/bs';
+import { IconContext } from "react-icons";
+import deved from './public/mo.jpg'
+import c from './public/c++.png'
+import python from './public/python.png'
+import javascript from './public/javascript.png'
+import web1 from "./public/gen1.gif";
+import web2 from "./public/redblacktree.png";
+import web3 from "./public/ap.webp";
+import web4 from "./public/web6.png";
 import { useState } from 'react';
 
 function App() {
@@ -11,106 +20,91 @@ function App() {
       <main className=' bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='min-h-screen'>
          <nav className=' py-10 mb-12 flex justify-between'>
-          <h1 className=' text-xl font-burtons'>mohammedshakleya</h1>
+          <h1 className=' text-xl font-burtons dark:text-cyan-700'>mohammedshakleya</h1>
           <ul className='flex items-center'>
-            <li><BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
-            <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://www.linkedin.com/in/mohammed-shakleya/">Resume</a></li>
+            <li><BsFillMoonStarsFill color={darkMode ? "gold" : "black"} onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
+            <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:from-cyan-700 dark:to-teal-700' href="https://www.linkedin.com/in/mohammed-shakleya/">Resume</a></li>
           </ul>
          </nav>
          <div className=' text-center p-10'>
-          <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Mohammed Shakleya</h2>
-          <h3 className='text-2xl py-2 md:text-3xl'>Developer and Thinker</h3>
-          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
+          <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl dark:text-cyan-700'>Mohammed Shakleya</h2>
+          <h3 className='text-2xl py-2 md:text-3xl dark:text-gray-400'>Developer and Thinker</h3>
+          <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500'>
           Currently enrolled in a full-time, degree-seeking program and in the process of obtaining a Bachelors degree in Computer Science.
           </p>
          </div>
-         <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-          <a href="https://www.linkedin.com/in/mohammed-shakleya/"><AiFillTwitterCircle /></a>
-          <a href="https://www.linkedin.com/in/mohammed-shakleya/"><AiFillLinkedin /></a>
-          <a href="https://www.linkedin.com/in/mohammed-shakleya/"><AiFillYoutube /></a>
+         <div className=' text-4xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-700'>
+          <a href="https://www.facebook.com/shakleya/"><BsFacebook /></a>
+          <a href="https://www.linkedin.com/in/mohammed-shakleya/"><BsLinkedin /></a>
+          <a href="https://github.com/BWC00/"><BsGithub /></a>
          </div>
          <div className='relative mx-auto bg-black bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-      {/*<Image src={deved} layout='fill' objectFit='cover'/> */}
+           <img src={deved} alt="" />
          </div>
         </section>
 
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Programming Skills</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-3xl py-1 dark:text-gray-400'>Programming Skills</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-500'>
             Obtained these skills through self education and studying at <span className=' text-teal-500'> University of Antwerp </span>
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>These mainly include (advanced level): </p>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-500'>These mainly include (advanced level): </p>
           </div>
           <div className='lg:flex gap-10'>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white'>
-      {/*<Image src={python} width={100} height={100} /> */}
-              <h3 className=' text-lg font-medium pt-8 pb-2'>Python</h3>
-              {/* <p className='py-2'>
-                Creating elegant designs suited for your needs design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className=' text-gray-800 py-1'>photoshop</p>
-              <p className=' text-gray-800 py-1'>illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p> */}
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-900'>
+              <img src={python} className='m-auto' width="100" height="100"/>
+              <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-500'>Python</h3>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white'>
-      {/*<Image src={ccc} width={100} height={100} /> */}
-              <h3 className=' text-lg font-medium pt-8 pb-2'>C++</h3>
-              {/* <p className='py-2'>
-                Creating elegant designs suited for your needs design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className=' text-gray-800 py-1'>photoshop</p>
-              <p className=' text-gray-800 py-1'>illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p> */}
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-900'>
+              <img src={c} className='m-auto' width="100" height="100"/>
+              <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-500'>C++</h3>
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white'>
-      {/*<Image src={javascript} width={100} height={100} /> */}
-              <h3 className=' text-lg font-medium pt-8 pb-2'>Javascript</h3>
-              {/* <p className='py-2'>
-                Creating elegant designs suited for your needs design theory.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className=' text-gray-800 py-1'>photoshop</p>
-              <p className=' text-gray-800 py-1'>illustrator</p>
-              <p className=' text-gray-800 py-1'>Figma</p> */}
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-gray-900'>
+              <img src={javascript} className='m-auto' width="85" height="90"/>
+              <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-500'>Javascript</h3>
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1'>Portfolio</h3>
-            {/* <p className='text-md py-2 leading-8 text-gray-800'>
-            Lorem ipsum dolor sit <span className=' text-teal-500'> amet </span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-            </p>
-            <p className='text-md py-2 leading-8 text-gray-800'>I offer a lot of services and goods!</p> */}
+            <h3 className='text-3xl py-1 dark:text-gray-400'>Portfolio</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-500'>Some of the projects I've worked on during college:</p>
           </div>
-      {/*
+      
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web1} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web2} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web3} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web4} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web5} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-            <div className=' basis-1/3 flex-1'>
-              <Image src={web6} className='rounded-lg object-cover' width={'100%'} height={'100%'} layout='responsive'/>
-            </div>
-          </div> */}
+            <a href="https://github.com/Sam-Roggeman/MB-TO-Project" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web1} className='rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Racing game simulator</h4>
+                <span>Racing game using neural networks</span>
+              </div>
+            </a>
+            <a href="https://github.com/RobbeNooyens/gas-toepassingsopdracht/blob/master/Eindversie/Implementaties/Datastructuren/MohammedRBT.py" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web2} className='rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Red Black Tree</h4>
+                <span>Implementation of a red black tree</span>
+              </div>
+            </a>
+            <a href="https://github.com/TsjipTsjip/TAL-TO-Groep" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web3} className=' rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Audio Recognizer</h4>
+                <span>Audio Recognizer implemented using the Boyer Moore Horspool algorithm</span>
+              </div>
+            </a>
+            <a href="https://github.com/William-Steklein/UABA2-PPDB-project" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web4} className='rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Recommendation Simulator</h4>
+                <span>Web application (facilitates the comparison of recommendation algorithms)</span>
+              </div>
+            </a>
+          </div>
         </section>
       </main>
     </div>
