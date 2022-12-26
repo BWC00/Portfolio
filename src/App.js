@@ -11,6 +11,8 @@ import web1 from "./public/gen1.gif";
 import web2 from "./public/redblacktree.png";
 import web3 from "./public/ap.webp";
 import web4 from "./public/web6.png";
+import doodle_jump from "./public/doodle_jump.jpeg";
+import cv from "./public/cv.pdf";
 import { useState } from 'react';
 
 function App() {
@@ -23,7 +25,7 @@ function App() {
           <h1 className=' text-xl font-burtons dark:text-cyan-700'>mohammedshakleya</h1>
           <ul className='flex items-center'>
             <li><BsFillMoonStarsFill color={darkMode ? "gold" : "black"} onClick={() => setDarkMode(!darkMode)} className=' cursor-pointer text-2xl'/></li>
-            <li><a className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:from-cyan-700 dark:to-teal-700' href="https://www.linkedin.com/in/mohammed-shakleya/">Resume</a></li>
+            <li><a href={cv} download="cv.pdf" className=' bg-gradient-to-r  from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 dark:from-cyan-700 dark:to-teal-700'>Resume</a></li>
           </ul>
          </nav>
          <div className=' text-center p-10'>
@@ -80,7 +82,28 @@ function App() {
               <img src={web1} className='rounded-lg object-cover' width="100%" height="100%"/>
               <div className="proj-txtx">
                 <h4>Racing game simulator</h4>
-                <span>Racing game using neural networks</span>
+                <span>2D Racing game using neural networks</span>
+              </div>
+            </a>
+            <a href="https://github.com/BWC00/Doodle_Jump" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={doodle_jump} className='rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Doodle Jump in c++ </h4>
+                <span>2D interactive game</span>
+              </div>
+            </a>
+            <a href="https://github.com/TsjipTsjip/TAL-TO-Groep" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web3} className=' rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Music Recognizer</h4>
+                <span>Attempts to find the matching songtitle based on a given audio fragment.</span>
+              </div>
+            </a>
+            <a href="https://github.com/William-Steklein/UABA2-PPDB-project" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
+              <img src={web4} className='rounded-lg object-cover' width="100%" height="100%"/>
+              <div className="proj-txtx">
+                <h4>Recommendation Simulator and Explorer</h4>
+                <span>Web application</span>
               </div>
             </a>
             <a href="https://github.com/RobbeNooyens/gas-toepassingsopdracht/blob/master/Eindversie/Implementaties/Datastructuren/MohammedRBT.py" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
@@ -90,20 +113,8 @@ function App() {
                 <span>Implementation of a red black tree</span>
               </div>
             </a>
-            <a href="https://github.com/TsjipTsjip/TAL-TO-Groep" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
-              <img src={web3} className=' rounded-lg object-cover' width="100%" height="100%"/>
-              <div className="proj-txtx">
-                <h4>Audio Recognizer</h4>
-                <span>Audio Recognizer implemented using the Boyer Moore Horspool algorithm</span>
-              </div>
-            </a>
-            <a href="https://github.com/William-Steklein/UABA2-PPDB-project" className='box box1 shadow-lg basis-1/3 flex-1 proj-imgbx cursor-pointer'>
-              <img src={web4} className='rounded-lg object-cover' width="100%" height="100%"/>
-              <div className="proj-txtx">
-                <h4>Recommendation Simulator</h4>
-                <span>Web application (facilitates the comparison of recommendation algorithms)</span>
-              </div>
-            </a>
+            <div className='basis-1/3 flex-1'>
+            </div>
           </div>
         </section>
       </main>
