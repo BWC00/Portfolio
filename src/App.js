@@ -3,7 +3,7 @@ import './App.css';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {BsFacebook, BsLinkedin, BsGithub} from 'react-icons/bs';
 import { IconContext } from "react-icons";
-import deved from './public/mo.jpg'
+import deved from './public/image.jpg'
 import c from './public/c++.png'
 import python from './public/python.png'
 import javascript from './public/javascript.png'
@@ -41,7 +41,7 @@ function App() {
           <a href="https://github.com/BWC00/"><BsGithub /></a>
          </div>
          <div className='relative mx-auto bg-black bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-           <img src={deved} alt="" />
+           <img src={deved} alt=""/>
          </div>
         </section>
 
