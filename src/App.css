@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
@@ -46,7 +50,7 @@
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.70;
+  opacity: 0.40;
   position: absolute;
   width: 100%;
   height: 0;
@@ -97,4 +101,14 @@
 
 .box3 img {
     object-fit: fill;
+}
+
+@layer utilities {
+	.boxcus::before {
+		@apply content-[''] absolute bg-[conic-gradient(#04b0ee_20deg,transparent_120deg)] w-[300px] h-[300px] top-[-25%] left-[-25%] animate-bounce
+	}
+	.boxcus::after {
+		@apply content-['tailwind'] w-[94%] h-[94%] bg-[#020223] absolute top-[3%] left-[3%] flex justify-center items-center tracking-[2px]
+	}
+
 }
