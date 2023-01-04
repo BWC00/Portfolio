@@ -32,43 +32,43 @@ function App() {
            <img src={deved} alt=""/>
          </div>
          <div className=' flex flex-col mb-10 items-center justify-center'>
-	  	  <div className=' text-gray-300 bg-gray-900 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 mb-3 w-fit dark:bg-cyan-900 dark:shadow-black/100 dark:hover:bg-cyan-700'>
-          <h3 className='text-2xl py-0.5 md:text-3xl dark:text-gray-900'>Mohammed Shakleya</h3>
+	  	  <div className=' text-gray-300 bg-gray-900 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 mb-3 w-fit dark:bg-cyan-900 dark:shadow-black/100 border border-gray-700 dark:border-black/20'>
+          <h3 className='text-2xl py-0.5 md:text-3xl dark:text-gray-900 hover:text-gray-100 dark:hover:text-black transform transition-all duration-300'>Mohammed Shakleya</h3>
 	  	  </div>
-	  	  <div className=' text-center bg-gray-200 rounded-xl transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30	dark:shadow-black/100 dark:bg-black/40'>
+	  	  <div className=' text-center bg-gray-200 rounded-xl transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 dark:shadow-black/100 dark:bg-black/40 border border-gray-100/70 dark:border-black/30'>
           <p className='text-md px-2 py-1 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-400'>
           “Be the change that you want to see in the world.”
           </p>
 	  	  </div>
          </div>
          <div className=' text-4xl mb-20 flex justify-center gap-16 py-1 text-gray-600 dark:text-gray-700'>
-          <a className="bg-[#3b5998]/90 transform transition-all hover:bg-[#3b5998]/100 hover:shadow-black/70 duration-300 rounded-full p-1.5 shadow-lg shadow-black/40 dark:bg-blue-900 dark:hover:bg-blue-800 dark:shadow-black/100" href="https://www.facebook.com/shakleya/"><BsFacebook style={{color:darkMode ?'gray' : 'white'}} /></a>
-          <a className="bg-[#0072B1]/90 transform transition-all hover:bg-[#0072B1]/100 hover:shadow-black/60 duration-300 rounded-xl p-1.5 shadow-lg shadow-black/40 dark:bg-blue-800 dark:hover:bg-blue-700 dark:shadow-black/100" href="https://www.linkedin.com/in/mohammed-shakleya/"><BsLinkedin style={{color:darkMode ?'gray' : 'white'}} /></a>
-          <a className="bg-black/90 transform transition-all hover:bg-black/100 hover:shadow-black/60 duration-300 rounded-full p-1.5 shadow-lg shadow-black/40 dark:bg-black dark:hover:bg-black/10 dark:shadow-black/100" href="https://github.com/BWC00/"><BsGithub style={{color:darkMode ? 'gray' : 'white'}} /></a>
+          <a className="bg-[#3b5998]/90 transform transition-all hover:bg-[#3b5998]/100 hover:shadow-black/70 duration-300 rounded-full p-1.5 shadow-lg shadow-black/40 dark:bg-blue-900 dark:hover:bg-blue-800 dark:shadow-black/100 border border-black/10 dark:border-black/60" href="https://www.facebook.com/shakleya/"><BsFacebook style={{color:darkMode ?'gray' : 'white'}} /></a>
+          <a className="bg-[#0072B1]/90 transform transition-all hover:bg-[#0072B1]/100 hover:shadow-black/60 duration-300 rounded-xl p-1.5 shadow-lg shadow-black/40 dark:bg-blue-800 dark:hover:bg-blue-700 dark:shadow-black/100 border border-black/10 dark:border-black/60" href="https://www.linkedin.com/in/mohammed-shakleya/"><BsLinkedin style={{color:darkMode ?'gray' : 'white'}} /></a>
+          <a className="bg-black/90 transform transition-all hover:bg-black/100 hover:shadow-black/60 duration-300 rounded-full p-1.5 shadow-lg shadow-black/40 dark:bg-black dark:hover:bg-black/10 dark:shadow-black/100 border border-black/10 dark:border-black/60" href="https://github.com/BWC00/"><BsGithub style={{color:darkMode ? 'gray' : 'white'}} /></a>
          </div>
         </section>
 
         <section>
           <div className='flex flex-col flex-wrap'>
-            <h3 className='text-3xl py-1 text-gray-300 bg-gray-900 w-fit px-2 rounded-xl mb-3 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 dark:text-gray-900 dark:bg-cyan-900 dark:shadow-black/100'>Programming Skills</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 mb-2 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400'>
+            <h3 className='text-3xl py-1 text-gray-300 bg-gray-900 w-fit px-2 rounded-xl mb-3 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 dark:text-gray-900 dark:bg-cyan-900 dark:shadow-black/100 border border-gray-700 dark:border-black/20'>Programming Skills</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 mb-2 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30'>
             Obtained these skills through self education and studying at <span className=' text-teal-500'> University of Antwerp </span>
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl p-1 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/20 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400'>These mainly include (advanced level): </p>
+            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl p-1 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/20 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30'>These mainly include (advanced level): </p>
           </div>
           <div className='lg:flex gap-10'>
 
-            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black/10 text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100'>
+            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black/10 text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100 border border-gray-100/30 dark:border-black'>
               <img src={python} className='m-auto' width="100" height="100"/>
               <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-600'>Python</h3>
             </div>
 
-            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100'>
+            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100 border border-gray-100/30 dark:border-black'>
               <img src={c} className='m-auto' width="100" height="100"/>
               <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-600'>C++</h3>
             </div>
 
-            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100'>
+            <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100 border border-gray-100/30 dark:border-black'>
               <img src={javascript} className='m-auto' width="85" height="90"/>
               <h3 className=' text-lg font-medium pt-8 pb-2 dark:text-gray-600'>Javascript</h3>
             </div>
@@ -76,8 +76,8 @@ function App() {
         </section>
         <section>
           <div>
-            <h3 className='text-3xl py-1 text-gray-300 dark:text-gray-400 bg-gray-900 w-fit px-2 rounded-xl my-3 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 dark:text-gray-900 dark:bg-cyan-900 dark:shadow-black/100'>Projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 mb-3 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400'>Some of the projects I've worked on during my journey at university:</p>
+            <h3 className='text-3xl py-1 text-gray-300 bg-gray-900 w-fit px-2 rounded-xl my-3 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 dark:text-gray-900 dark:bg-cyan-900 dark:shadow-black/100 border border-gray-700 dark:border-black/30'>Projects</h3>
+            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 mb-3 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30 dark:text-gray-900'>Some of the projects I've worked on during my journey at university:</p>
           </div>
       
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
