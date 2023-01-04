@@ -20,7 +20,7 @@ function App() {
   return (
       <div className={ darkMode ? 'dark' : 'bg-paper'}>
       <main className=' px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
-        <section className='min-h-screen mb-10'>
+        <section className='min-h-screen mb-20'>
          <nav className=' pt-10 pb-1 mb-12 flex justify-between'>
           <h1 className=' text-xl font-burtons dark:text-cyan-700'>mohammedshakleya</h1>
           <ul className='flex items-center'>
@@ -56,7 +56,7 @@ function App() {
             </p>
             <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl p-1 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/20 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30'>These mainly include (advanced level): </p>
           </div>
-          <div className='lg:flex gap-10'>
+          <div className='lg:flex gap-10 mb-20'>
 
             <div className='bg-gray-200 bg-gradient-to-r dark:bg-black dark:from-black dark:via-sky-900/30 dark:to-black/10 text-center p-10 rounded-xl my-10 flex-1 transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl shadow-black/50 dark:shadow-black/100 border border-gray-100/30 dark:border-black'>
               <img src={python} className='m-auto' width="100" height="100"/>
@@ -77,7 +77,7 @@ function App() {
         <section>
           <div>
             <h3 className='text-3xl py-1 text-gray-300 bg-gray-900 w-fit px-2 rounded-xl my-3 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/60 dark:text-gray-900 dark:bg-cyan-900 dark:shadow-black/100 border border-gray-700 dark:border-black/30'>Projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 mb-3 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30 dark:text-gray-900'>Some of the projects I've worked on during my journey at university:</p>
+            <p className='text-md py-2 leading-8 text-gray-800 bg-gray-200 rounded-xl px-2 transform transition-all hover:-translate-y-1 duration-100 shadow-lg hover:shadow-2xl shadow-black/30 w-fit dark:shadow-black/100 dark:bg-black/40 dark:text-gray-400 border border-gray-100/70 dark:border-black/30 dark:text-gray-900'>Some of the projects I've worked on during my journey at university:</p>
           </div>
       
           <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
